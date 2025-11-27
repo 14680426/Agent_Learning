@@ -1,0 +1,60 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# LangGraph API
+.langgraph_api/
+
+# Log files
+*.log
+
+# Local configuration
+.env
+
+# Skip specified directories and their contents
+venv/*
+src/Models/maidalun/
+src/Models/ms-marco-MiniLM-L-6-v2/
+src/Models/__pycache__/
+src/Models/.lock/
+src/Models/._____temp/
+src/RAG/Dataset/PDF/*
+src/RAG/tools/chroma_db/*
