@@ -58,3 +58,4 @@ src/Models/.lock/
 src/Models/._____temp/
 src/RAG/Dataset/PDF/*
 src/RAG/tools/chroma_db/*
+src/Manus/report2/*

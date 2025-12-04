@@ -12,6 +12,7 @@ if src_dir not in sys.path:
 from langchain.agents.factory import create_agent
 from langchain_core.tools import tool
 from Models import ModelManager
+from Agent.tools import MyWebSearchTool
 
 
 # 初始化模型管理器并获取模型实例
@@ -44,8 +45,8 @@ def send_email(to: str, subject: str, body: str):
 # 创建 React Agent
 agent_executor = create_agent(
     model=llm,
-    tools=[send_email],
-    system_prompt="你是一个邮件助手。"
+    tools=[send_email, MyWebSearchTool],   
+    system_prompt="你是一个智能助手。"
 )
 print("✅ Agent创建完成!")
 
@@ -62,7 +63,7 @@ if __name__ == "__main__":
         # 测试输入
         inputs = {
             "messages": [
-                {"role": "user", "content": "请帮我给张三发一封邮件，告诉他会议时间改到明天下午3点了，主题是项目进度同步。"}
+                {"role": "user", "content": "请你先获取今天的年月日，然后帮我给张三发一封邮件，告诉他会议时间改到明天下午3点（邮件中需要明确给出年月日），主题是项目进度同步。"}
             ]
         }
        

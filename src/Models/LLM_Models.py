@@ -63,6 +63,7 @@ class ModelManager:
         # 合并传入的参数
         merged_kwargs = {**default_kwargs, **kwargs}
         return self.get_model("Qwen3-32B", **merged_kwargs)
+        # return self.get_model("Qwen3-Coder-Plus", **merged_kwargs)
     
     def get_deepseek_model(self, **kwargs) -> ChatOpenAI:
         """快速获取DeepSeek模型实例"""

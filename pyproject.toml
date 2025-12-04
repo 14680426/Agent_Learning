@@ -41,7 +41,24 @@ dependencies = [
     "langchain_openai",
     "modelscope",
     "torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118",
-    "pypdf"
+    "pypdf",
+    # Newly added dependencies
+    "anyio>=4.12.0",
+    "httpx>=0.28.1",
+    "httpx-sse>=0.4.3",
+    "mcp>=1.22.0",
+    "pydantic-core>=2.41.5",
+    "pydantic-settings>=2.12.0",
+    "python-multipart>=0.0.20",
+    "shellingham>=1.5.4",
+    "typer>=0.20.0",
+    "typing-inspection>=0.4.2",
+    "dashscope==1.25.2",
+    "dotenv==0.9.9",
+    "eval-type-backport==0.3.1",
+    "json5==0.12.1",
+    "jsonlines==4.0.0",
+    "qwen-agent==0.0.31"
 ]
 
 [project.optional-dependencies]
